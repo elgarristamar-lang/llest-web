@@ -1,4 +1,19 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+/* Tres pasos */
+.paso-grid{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
+@media (max-width:900px){ .paso-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:560px){ .paso-grid{ grid-template-columns:1fr; } }
+.paso{ border-radius:12px; padding:28px 24px; display:grid; gap:12px; align-content:start; min-width:0; }
+.paso-n{ font-family:var(--display); font-weight:700; font-size:72px; line-height:.9; letter-spacing:-0.06em; }
+.paso h3{ font-size:22px; letter-spacing:-0.03em; }
+.paso p{ font-size:15px; }
+.paso-tag{ justify-self:start; font-size:12px; font-weight:700; border-radius:999px; padding:5px 12px; }
+.paso.p1{ background:var(--card); color:var(--fg); border:1px solid var(--line); }
+.paso.p1 .paso-n{ color:var(--blue); } .paso.p1 p{ color:var(--muted); } .paso.p1 .paso-tag{ background:var(--blue); color:#F5F5F5; }
+.paso.p2{ background:#333333; color:#F5F5F5; } .paso.p2 p{ color:#CFCFCF; } .paso.p2 .paso-tag{ background:#F5F5F5; color:#333333; }
+.paso.p3{ background:#0055FF; color:#F5F5F5; } .paso.p3 p{ color:#E6EDFF; } .paso.p3 .paso-tag{ background:#F5F5F5; color:#0055FF; }
+.paso.p4{ background:transparent; color:var(--fg); box-shadow:inset 0 0 0 2px var(--fg); } .paso.p4 p{ color:var(--muted); } .paso.p4 .paso-tag{ box-shadow:inset 0 0 0 1.5px var(--fg); }
+</style></head><body>
 <title>Llest Web</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
