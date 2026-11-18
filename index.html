@@ -1,7 +1,7 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
 /* Tres pasos */
-.paso-grid{ display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
-@media (max-width:900px){ .paso-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+.paso-grid{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+@media (max-width:900px){ .paso-grid{ grid-template-columns:1fr; } }
 @media (max-width:560px){ .paso-grid{ grid-template-columns:1fr; } }
 .paso{ border-radius:12px; padding:28px 24px; display:grid; gap:12px; align-content:start; min-width:0; }
 .paso-n{ font-family:var(--display); font-weight:700; font-size:72px; line-height:.9; letter-spacing:-0.06em; }
@@ -318,8 +318,7 @@ footer .wrap{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:1
     "itemListElement": [
       {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Herramienta a medida", "description": "Herramienta hecha a medida del proceso de cada cliente, sobre una base propia probada."}},
       {"@type": "Offer", "price": "0", "priceCurrency": "EUR", "itemOffered": {"@type": "Service", "name": "Llamada inicial", "description": "Llamada gratuita de 20 a 30 minutos para ver si el problema es de los que resolvemos."}},
-      {"@type": "Offer", "price": "600", "priceCurrency": "EUR", "itemOffered": {"@type": "Service", "name": "Consulta y plan", "description": "Sesión de una o dos horas y plan escrito en una semana. Se descuenta si se contrata la ejecución."}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mantenimiento", "description": "Opcional: ajustes, soporte y cambios menores con bolsa de horas, sin cuotas mensuales."}}
+      {"@type": "Offer", "price": "600", "priceCurrency": "EUR", "itemOffered": {"@type": "Service", "name": "Consulta y plan", "description": "Sesión de una o dos horas y plan escrito en una semana. Se descuenta si se contrata la ejecución."}}
     ]
   }
 }
@@ -334,7 +333,7 @@ footer .wrap{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:1
     {"@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": {"@type": "Answer", "text": "La llamada inicial es gratis. La consulta y plan cuesta 600 €, que se descuentan si después se contrata la ejecución. La ejecución tiene un presupuesto cerrado según el plan."}},
     {"@type": "Question", "name": "¿Qué incluye la consulta y plan?", "acceptedAnswer": {"@type": "Answer", "text": "Una sesión de una o dos horas con los datos de la empresa y, en una semana, un plan escrito con qué cambiar, en qué orden y cuánto se va a ahorrar. Cuesta 600 € y se descuenta si se contrata la ejecución."}},
     {"@type": "Question", "name": "¿Los datos están seguros?", "acceptedAnswer": {"@type": "Answer", "text": "La herramienta entregada funciona en el ordenador del cliente y no se conecta a ningún servidor. Los datos que el cliente envía para la consulta se tratan de forma confidencial y solo para preparar el plan."}},
-    {"@type": "Question", "name": "¿Qué pasa si falla o si cambia el proceso?", "acceptedAnswer": {"@type": "Answer", "text": "Los fallos respecto al funcional firmado se arreglan sin coste durante 60 días. Los cambios de proceso o de formato de fichero se presupuestan aparte o con una bolsa de horas."}},
+    {"@type": "Question", "name": "¿Qué pasa si falla o si cambia el proceso?", "acceptedAnswer": {"@type": "Answer", "text": "Los fallos respecto al funcional firmado se arreglan sin coste durante 60 días. Los cambios de proceso o de formato de fichero se presupuestan aparte."}},
     {"@type": "Question", "name": "¿Hacéis facturación oficial, contabilidad o nóminas?", "acceptedAnswer": {"@type": "Answer", "text": "No. Llest hace los procesos de alrededor: control, cruce de datos, informes y registros."}}
   ]
 }
@@ -427,7 +426,6 @@ footer .wrap{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:1
         <article class="paso p1"><span class="paso-n">1</span><h3>Llamada inicial</h3><span class="paso-tag">Gratis · 20 a 30 min</span><p>Os hacemos tres preguntas sobre lo que más os cuesta hoy y vemos si encajamos. Si el problema no es de los que resolvemos, os lo decimos.</p></article>
         <article class="paso p2"><span class="paso-n">2</span><h3>Consulta y plan</h3><span class="paso-tag">600 € · se descuentan si se hace el proyecto</span><p>Nos enviáis vuestros datos antes y hacemos una sesión de una o dos horas. En una semana tenéis un plan escrito con qué cambiar, en qué orden y cuánto vais a ahorrar. Si después hacemos el proyecto, los 600 € se descuentan del precio de la ejecución.</p></article>
         <article class="paso p3"><span class="paso-n">3</span><h3>Ejecución</h3><span class="paso-tag">Presupuesto cerrado según el plan</span><p>Antes de construir firmáis un documento con qué hace la herramienta y qué no. Después construimos las herramientas del plan que aprobéis y las dejamos funcionando en vuestros ordenadores, con documentación, formación y 60 días de garantía. A los 90 días medimos el resultado.</p></article>
-        <article class="paso p4"><span class="paso-n">+</span><h3>Mantenimiento</h3><span class="paso-tag">Opcional</span><p>Ajustes, soporte y cambios menores con una bolsa de horas que compráis solo cuando la necesitáis. Sin cuotas mensuales. Si preferís llevarlo vosotros, la herramienta está pensada para que no nos necesitéis.</p></article>
       </div>
     </div>
   </section>
@@ -480,7 +478,7 @@ footer .wrap{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:1
         <details><summary>¿Cuánto cuesta?</summary><p class="a">Cada herramienta se hace a medida de vuestro proceso. La llamada inicial es gratis. La consulta y plan cuesta 600 €, que os descontamos si después contratáis la ejecución. La ejecución tiene un presupuesto cerrado según el plan, con lo que vais a ahorrar y en cuánto tiempo se recupera.</p></details>
         <details><summary>¿Qué incluye la consulta y plan?</summary><p class="a">Nos enviáis vuestros datos antes y hacemos una sesión de una o dos horas. En una semana tenéis un plan escrito: qué cambiar, en qué orden y cuánto vais a ahorrar. Cuesta 600 € y, si después contratáis la ejecución, os lo descontamos. Si preferís hacerlo vosotros con el plan, también podéis.</p></details>
         <details><summary>¿Nuestros datos están seguros?</summary><p class="a">La herramienta que os entregamos funciona en vuestro ordenador y no se conecta a ningún servidor nuestro ni de terceros. Vosotros decidís dónde se guarda el fichero. Para la consulta sí trabajamos con los datos que nos enviáis: los tratamos de forma confidencial, solo para preparar el plan, y antes os explicamos cómo.</p></details>
-        <details><summary>¿Qué pasa si falla o si cambia nuestro proceso?</summary><p class="a">Si falla respecto a lo que firmamos en el funcional, lo arreglamos sin coste durante 60 días. Si cambia vuestro proceso o el formato de los ficheros, eso es un cambio nuevo: se presupuesta aparte o se cubre con la bolsa de horas. Lo decimos desde el principio para que no haya sorpresas.</p></details>
+        <details><summary>¿Qué pasa si falla o si cambia nuestro proceso?</summary><p class="a">Si falla respecto a lo que firmamos en el funcional, lo arreglamos sin coste durante 60 días. Si cambia vuestro proceso o el formato de los ficheros, eso es un cambio nuevo: se presupuesta aparte. Lo decimos desde el principio para que no haya sorpresas.</p></details>
         <details><summary>¿Hacéis facturación oficial, contabilidad o nóminas?</summary><p class="a">No. Tienen requisitos legales propios y hay programas para eso. Lo nuestro son los procesos de alrededor: el control, el cruce de datos, los informes y los registros que hoy se llevan a mano.</p></details>
       </div>
     </div>
